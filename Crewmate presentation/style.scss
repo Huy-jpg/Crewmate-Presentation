@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .container{
+    position: relative;
+    display: flex;
+    width: 100%;
+  
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.next, .prev{
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 25px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .3s all ease;
+
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    color: rgb(209, 209, 209);
+  }
+}
+.next{
+  left: 70%;
+}
+.prev{
+  left: 26%;
+}
